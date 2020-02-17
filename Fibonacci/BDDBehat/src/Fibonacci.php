@@ -5,6 +5,10 @@ class Fibonacci
 {
     public function getValueByIndex($index){
 
-        if($index == 1){return 0;}
+        if($index == 1){
+            return 0;
+        } else if($index == 2){
+            return 1;
+        }
     }
 }
