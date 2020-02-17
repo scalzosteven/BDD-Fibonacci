@@ -31,4 +31,13 @@ class FibonacciTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(1,$nextItemNumber,
             sprintf('Result for index 2 should be a 1 and got %s', $nextItemNumber));
     }
+
+    /**
+     * @test
+     */
+    public function If_Index_Is_Three_Value_Is_two(){
+        $nextItemNumber = $this->fibonacci->getValueByIndex(3);
+        $this->assertEquals(2,$nextItemNumber,
+            sprintf('Result for index 3 should be a 2 and got %s', $nextItemNumber));
+    }
 }
