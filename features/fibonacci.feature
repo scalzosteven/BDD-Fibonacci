@@ -16,3 +16,8 @@ Feature: Test Fibonacci Sequence
     Given A Fibonacci sequence algorithm
     When  I pass the index 3
     Then  I should be able to get the value 1
+
+  Scenario: Get Fibonacci Sequence Number for index 4
+    Given A Fibonacci sequence algorithm
+    When  I pass the index 4
+    Then  I should be able to get the value 2
