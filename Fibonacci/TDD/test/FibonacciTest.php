@@ -17,9 +17,18 @@ class FibonacciTest extends PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function If_Index_Value_Is_Zero(){
+    public function If_Index_Is_One_Value_Is_Zero(){
         $nextItemNumber = $this->fibonacci->getValueByIndex(1);
         $this->assertEquals(0,$nextItemNumber,
             sprintf('Result for index 1 should be a 0 and got %s', $nextItemNumber));
+    }
+
+    /**
+     * @test
+     */
+    public function If_Index_Is_Two_Value_Is_One(){
+        $nextItemNumber = $this->fibonacci->getValueByIndex(2);
+        $this->assertEquals(1,$nextItemNumber,
+            sprintf('Result for index 2 should be a 1 and got %s', $nextItemNumber));
     }
 }
